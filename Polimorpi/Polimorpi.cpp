@@ -22,7 +22,19 @@ public:
 		cout << "Pesan dari Lia" << endl;
 	}
 };
+
 int main()
 {
+	seseorang* obyek;
+	joko a;
+	lia b;
+
+	obyek = &a;
+	obyek->pesan();
+	obyek = &b;
+	obyek->pesan();
+	//a.seseorang::pesan();
+
+	return 0;
 }
 
