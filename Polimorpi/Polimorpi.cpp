@@ -16,6 +16,9 @@ public:
 	}
 };
 
+class lia :public seseorang {
+
+};
 int main()
 {
 }
