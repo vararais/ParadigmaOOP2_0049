@@ -21,3 +21,30 @@ public:
     }
 
 };
+
+
+class pelajar : virtual public orang {
+public:
+    pelajar(int pUmur) :
+        orang(pUmur)
+    {
+        cout << "Pelajar dibuat\n" << endl;
+    }
+};
+
+class budi : public pekerja, public pelajar {
+public:
+    budi(int pUmur) :
+        pekerja(pUmur),
+        pelajar(pUmur),
+        orang(pUmur)
+    {
+        cout << "Budi dibuat" << endl;
+    }
+};
+
+int main() {
+    budi a(12);
+
+    return 0;
+}
